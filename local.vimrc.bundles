@@ -1,0 +1,7 @@
+" Plugins
+Plug 'wakatime/vim-wakatime'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'junegunn/fzf', { }
+Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'maralla/completor.vim'
