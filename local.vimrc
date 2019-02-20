@@ -71,3 +71,11 @@ augroup vimrc-python
       \ formatoptions+=croq softtabstop=2
       \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 augroup END
+
+" mappping up/down selected text
+nnoremap <C-j> :m+<CR>==
+nnoremap <C-k> :m-2<CR>==
+inoremap <C-j> <Esc>:m+<CR>==gi
+inoremap <C-k> <Esc>:m-2<CR>==gi
+vnoremap <C-j> :m'>+<CR>gv=gv
+vnoremap <C-k> :m-2<CR>gv=gv
