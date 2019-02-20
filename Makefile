@@ -10,6 +10,11 @@ remoteinstall: clean bootstrap-vim
 	cp local.vimrc ~/.vimrc.local
 	cp local.vimrc.bundles ~/.vimrc.local.bundles
 	
+softinstall:
+	cp $(VIMRC) ~/.vimrc
+	cp local.vimrc ~/.vimrc.local
+	cp local.vimrc.bundles ~/.vimrc.local.bundles
+
 install: clean
 	cp $(VIMRC) ~/.vimrc
 	cp local.vimrc ~/.vimrc.local
