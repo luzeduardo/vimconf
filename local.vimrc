@@ -6,10 +6,18 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 set nrformats+=alpha
 set autoindent
 
+" clear whitespaces
+nmap <Leader>ds :call StripTrailingWhitespace()<CR>
+
+
 " CtrlP map {
 
 let g:NERDTreeMapOpenInTabSilent = 'T'
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+" toggle nerd tree
+nmap <leader>t :NERDTreeToggle %<CR>
+
 
 " }
 
