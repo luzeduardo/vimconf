@@ -6,13 +6,17 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 set nrformats+=alpha
 set autoindent
 
+" Codi
+let g:codi#width = 50.0
+let g:codi#rightalign = 0
+
 " CtrlP map {
 
 let g:NERDTreeMapOpenInTabSilent = 'T'
 let g:NERDTreeNodeDelimiter = "\u00a0"
 
 " toggle nerd tree
-map <leader>t :NERDTreeToggle %<CR>
+nmap <leader>t :NERDTreeToggle %<CR>
 
 
 " }
