@@ -24,13 +24,15 @@ nmap <leader>t :NERDTreeToggle %<CR>
 " CtrlP map {
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_max_files = 20000
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+
 
 let g:ctrlp_custom_ignore = {
 \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$|backup',
 \ 'file': '\.so$\|\.dat$|\.DS_Store$'
 \ }
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe 
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
     " Use Ag over Grep
@@ -45,7 +47,7 @@ let g:ctrlp_cache_dir = $HOME.'/.vim/.cache/ctrlp'
 let g:ctrlp_match_window_reversed = 1
 let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-    
+
 map <leader>opp :CtrlP<cr>
 map <leader>opc :CtrlPCurFile<cr>
 map <leader>opb :CtrlPBuffer<cr>
