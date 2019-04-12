@@ -5,7 +5,7 @@ VIMRC ?= bootstrap.vimrc
 bootstrap-vim:
 	curl $(URL) --data $(LANGS) > $(VIMRC)
 
-remoteinstall: clean bootstrap-vim
+install: clean bootstrap-vim
 	cp $(VIMRC) ~/.vimrc
 	cp local.vimrc ~/.vimrc.local
 	cp local.vimrc.bundles ~/.vimrc.local.bundles
@@ -15,7 +15,7 @@ softinstall:
 	cp local.vimrc ~/.vimrc.local
 	cp local.vimrc.bundles ~/.vimrc.local.bundles
 
-install: clean
+localinstall: clean
 	cp $(VIMRC) ~/.vimrc
 	cp local.vimrc ~/.vimrc.local
 	cp local.vimrc.bundles ~/.vimrc.local.bundles	
