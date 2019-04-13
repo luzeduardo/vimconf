@@ -10,7 +10,7 @@ set autoindent
 let g:codi#width = 50.0
 let g:codi#rightalign = 0
 
-" CtrlP map {
+" NERDTree map {
 
 let g:NERDTreeMapOpenInTabSilent = 'T'
 let g:NERDTreeNodeDelimiter = "\u00a0"
@@ -32,6 +32,7 @@ let g:ctrlp_custom_ignore = {
 \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$|backup',
 \ 'file': '\.so$\|\.dat$|\.DS_Store$'
 \ }
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
@@ -48,7 +49,7 @@ let g:ctrlp_match_window_reversed = 1
 let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-map <leader>opp :CtrlP<cr>
+map <leader>op :CtrlP<cr>
 map <leader>opc :CtrlPCurFile<cr>
 map <leader>opb :CtrlPBuffer<cr>
 map <leader>opd :CtrlPDir<cr>
