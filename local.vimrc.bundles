@@ -1,6 +1,5 @@
 " Plugins
 Plug 'wakatime/vim-wakatime'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { }
 Plug 'junegunn/fzf.vim'
 Plug 'pbogut/fzf-mru.vim'
