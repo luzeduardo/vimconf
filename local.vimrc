@@ -23,6 +23,7 @@ nmap <leader>t :NERDTreeToggle %<CR>
 
 " CtrlP map {
 
+set shell=/bin/bash
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
