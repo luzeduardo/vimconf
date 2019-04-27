@@ -11,6 +11,8 @@ let g:codi#width = 50.0
 let g:codi#rightalign = 0
 
 " NERDTree map {
+"auto start nerdtree
+autocmd vimenter * NERDTree
 
 let g:NERDTreeMapOpenInTabSilent = 'T'
 let g:NERDTreeNodeDelimiter = "\u00a0"
