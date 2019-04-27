@@ -96,3 +96,8 @@ vnoremap <C-k> :m-2<CR>gv=gv
 
 " disable swap file
 set noswapfile
+
+" vim conflicted set status line info
+set stl+=%{ConflictedVersion()}
+
+
