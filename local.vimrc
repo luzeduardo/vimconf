@@ -11,8 +11,8 @@ let g:codi#width = 50.0
 let g:codi#rightalign = 0
 
 " NERDTree map {
-"auto start nerdtree
-autocmd vimenter * NERDTree
+" aut start nerdtree
+" autocmd vimenter * NERDTree
 
 let g:NERDTreeMapOpenInTabSilent = 'T'
 let g:NERDTreeNodeDelimiter = "\u00a0"
@@ -97,7 +97,6 @@ vnoremap <C-k> :m-2<CR>gv=gv
 " disable swap file
 set noswapfile
 
-" vim conflicted set status line info
-set stl+=%{ConflictedVersion()}
-
+" format json
+vmap <S-f> :%!python -m json.tool <CR>
 

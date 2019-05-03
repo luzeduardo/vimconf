@@ -20,5 +20,9 @@ localinstall: clean
 	cp local.vimrc ~/.vimrc.local
 	cp local.vimrc.bundles ~/.vimrc.local.bundles	
 
+vimrc:
+	cp $(VIMRC) ~/.vimrc
+	cp local.vimrc ~/.vimrc.local
+
 clean:
 	rm -Rf ~/.vim*
