@@ -19,6 +19,7 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 
 " toggle nerd tree
 nmap <leader>t :NERDTreeToggle %<CR>
+nmap <leader>m :NERDTreeRefreshRoot %<CR>
 
 
 " }
