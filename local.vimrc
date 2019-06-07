@@ -54,6 +54,7 @@ let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 map <leader>op :CtrlP<cr>
+map <leader>ol  :CtrlPClearCache<cr>
 map <leader>opc :CtrlPCurFile<cr>
 map <leader>opb :CtrlPBuffer<cr>
 map <leader>opd :CtrlPDir<cr>
