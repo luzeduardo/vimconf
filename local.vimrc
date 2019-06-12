@@ -66,7 +66,11 @@ map <leader>opfb :CtrlPChange<cr>
 
 " Fuzzy MRU map {
   map <leader>p :FZFMru<cr>
-" }
+"
+
+" Ag Search with leader f map instead of grep.vim {
+  map <leader>f :Ag<cr>
+" } }
 
 " CSS Autocomplete
 filetype plugin on

@@ -5,7 +5,7 @@
 "*****************************************************************************
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
-let g:vim_bootstrap_langs = "c,elixir,erlang,html,javascript,lua,perl,php,python,ruby,rust,scala"
+let g:vim_bootstrap_langs = "c,elixir,erlang,html,javascript,lua,perl,php,python,rust,scala"
 let g:vim_bootstrap_editor = "vim"				" nvim or vim
 
 if !filereadable(vimplug_exists)
@@ -312,10 +312,10 @@ nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
 " grep.vim
-nnoremap <silent> <leader>f :Rgrep<CR>
-let Grep_Default_Options = '-IR'
-let Grep_Skip_Files = '*.log *.db'
-let Grep_Skip_Dirs = '.git node_modules'
+"nnoremap <silent> <leader>f :Rgrep<CR>
+"let Grep_Default_Options = '-IR'
+"let Grep_Skip_Files = '*.log *.db'
+"let Grep_Skip_Dirs = '.git node_modules'
 
 " terminal emulation
 nnoremap <silent> <leader>sh :terminal<CR>
@@ -491,7 +491,7 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 "" Open current line on GitHub
-nnoremap <Leader>o :.Gbrowse<CR>
+nnoremap <Leader>go :.Gbrowse<CR>
 
 "*****************************************************************************
 "" Custom configs
@@ -590,10 +590,10 @@ let g:tagbar_type_ruby = {
 \ }
 
 " RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+"map <Leader>t :call RunCurrentSpecFile()<CR>
+"map <Leader>s :call RunNearestSpec()<CR>
+"map <Leader>l :call RunLastSpec()<CR>
+"map <Leader>a :call RunAllSpecs()<CR>
 
 " For ruby refactory
 if has('nvim')
@@ -603,15 +603,15 @@ else
 endif
 
 " Ruby refactory
-nnoremap <leader>rap  :RAddParameter<cr>
-nnoremap <leader>rcpc :RConvertPostConditional<cr>
-nnoremap <leader>rel  :RExtractLet<cr>
-vnoremap <leader>rec  :RExtractConstant<cr>
-vnoremap <leader>relv :RExtractLocalVariable<cr>
-nnoremap <leader>rit  :RInlineTemp<cr>
-vnoremap <leader>rrlv :RRenameLocalVariable<cr>
-vnoremap <leader>rriv :RRenameInstanceVariable<cr>
-vnoremap <leader>rem  :RExtractMethod<cr>
+"nnoremap <leader>rap  :RAddParameter<cr>
+"nnoremap <leader>rcpc :RConvertPostConditional<cr>
+"nnoremap <leader>rel  :RExtractLet<cr>
+"vnoremap <leader>rec  :RExtractConstant<cr>
+"vnoremap <leader>relv :RExtractLocalVariable<cr>
+"nnoremap <leader>rit  :RInlineTemp<cr>
+"vnoremap <leader>rrlv :RRenameLocalVariable<cr>
+"vnoremap <leader>rriv :RRenameInstanceVariable<cr>
+"vnoremap <leader>rem  :RExtractMethod<cr>
 
 
 " rust
