@@ -10,11 +10,3 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'whiteinge/diffconflicts'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
-
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-
-" Optional:
-Plugin 'honza/vim-snippets'
-" Run :PlugInstall to install the plugin.
