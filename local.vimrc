@@ -109,7 +109,7 @@ vmap <S-f> :%!python -m json.tool <CR>
 
 " mapping for lazy things
 " console.log
-:map <leader>ll <S-b>yiwo<Esc>iconsole.log('<Esc>p<Esc>a====> <Esc>f)i, <Esc>p<Esc>==:w<CR>
+:map <leader>ll yiwo<Esc>iconsole.log('<Esc>p<Esc>a====> <Esc>f)i, <Esc>p<Esc>==:w<CR>
 " debugger
 :map <leader>lp o<Esc>idebugger<Esc>==:w<CR>
 
