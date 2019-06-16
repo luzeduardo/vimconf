@@ -113,3 +113,12 @@ vmap <S-f> :%!python -m json.tool <CR>
 " debugger
 :map <leader>lp o<Esc>idebugger<Esc>==:w<CR>
 
+" comment line
+:map <leader>lk <Esc>0i/*<Esc><S-$><S-a>*/<Esc>:w<CR> 
+
+set foldmethod=manual
+
+" abbr
+abbr lenght length
+abbr lenhtg length
+
