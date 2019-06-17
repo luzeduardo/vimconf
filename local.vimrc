@@ -18,7 +18,6 @@ let g:NERDTreeMapOpenInTabSilent = 'T'
 let g:NERDTreeNodeDelimiter = "\u00a0"
 
 " toggle nerd tree
-nmap <leader>t :NERDTreeToggle %<CR>
 nmap <leader>m :NERDTreeRefreshRoot %<CR>
 
 
@@ -106,7 +105,6 @@ set noswapfile
 " format json
 vmap <S-f> :%!python -m json.tool <CR>
 
-
 " mapping for lazy things
 " console.log
 :map <leader>ll yiwo<Esc>iconsole.log('<Esc>p<Esc>a====> <Esc>f)i, <Esc>p<Esc>==:w<CR>
@@ -116,9 +114,16 @@ vmap <S-f> :%!python -m json.tool <CR>
 " comment line
 :map <leader>lk <Esc>0i/*<Esc><S-$><S-a>*/<Esc>:w<CR> 
 
+
+" translation
+" to english
+vnoremap <silent><leader>lte :'<,'>TranslateVisual -show-original-phonetics -show-alternatives -show-translation-phonetics -verbose pt:en<CR>
+" selection to portuese
+vnoremap <silent><leader>ltp :'<,'>TranslateVisual -show-original-phonetics -show-alternatives -show-translation-phonetics -verbose en:pt<CR>
+
+" enable code fold
 set foldmethod=manual
 
 " abbr
 abbr lenght length
 abbr lenhtg length
-
