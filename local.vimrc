@@ -5,6 +5,7 @@ set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
 set nrformats+=alpha
 set autoindent
+set mouse=a
 
 " Codi
 let g:codi#width = 50.0
@@ -16,6 +17,7 @@ let g:codi#rightalign = 0
 
 let g:NERDTreeMapOpenInTabSilent = 'T'
 let g:NERDTreeNodeDelimiter = "\u00a0"
+let g:NERDTreeMouseMode=3
 
 " toggle nerd tree
 nmap <leader>m :NERDTreeRefreshRoot %<CR>
@@ -81,6 +83,8 @@ augroup vimrc-javascript
   autocmd!
   autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab softtabstop=2
 augroup END
+
+autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 " python
 " vim-python
