@@ -5,7 +5,7 @@
 "*****************************************************************************
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
-let g:vim_bootstrap_langs = "c,elixir,erlang,html,javascript,lua,perl,php,python,rust,scala"
+let g:vim_bootstrap_langs = "c,elixir,erlang,html,javascript,python,rust"
 let g:vim_bootstrap_editor = "vim"				" nvim or vim
 
 if !filereadable(vimplug_exists)
@@ -100,19 +100,19 @@ Plug 'jelera/vim-javascript-syntax'
 
 " lua
 "" Lua Bundle
-Plug 'xolox/vim-lua-ftplugin'
-Plug 'xolox/vim-lua-inspect'
+"Plug 'xolox/vim-lua-ftplugin'
+"Plug 'xolox/vim-lua-inspect'
 
 
 " perl
 "" Perl Bundle
-Plug 'vim-perl/vim-perl'
-Plug 'c9s/perlomni.vim'
+"Plug 'vim-perl/vim-perl'
+"Plug 'c9s/perlomni.vim'
 
 
 " php
 "" PHP Bundle
-Plug 'arnaud-lb/vim-php-namespace'
+"Plug 'arnaud-lb/vim-php-namespace'
 
 
 " python
@@ -138,12 +138,12 @@ Plug 'rust-lang/rust.vim'
 
 
 " scala
-if has('python')
+"if has('python')
     " sbt-vim
-    Plug 'ktvoelker/sbt-vim'
-endif
+""    Plug 'ktvoelker/sbt-vim'
+"endif
 " vim-scala
-Plug 'derekwyatt/vim-scala'
+"Plug 'derekwyatt/vim-scala'
 
 
 "*****************************************************************************

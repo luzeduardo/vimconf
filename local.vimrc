@@ -7,13 +7,6 @@ set nrformats+=alpha
 set autoindent
 set mouse=a
 
-
-Plug 'thosakwe/vim-flutter'
-call plug#end()
-
-" Enable Flutter menu
-call FlutterMenu()
-
 " Some of these key choices were arbitrary;
 " it's just an example.
 nnoremap <leader>fa :FlutterRun<cr>
@@ -21,6 +14,10 @@ nnoremap <leader>fq :FlutterQuit<cr>
 nnoremap <leader>fr :FlutterHotReload<cr>
 nnoremap <leader>fR :FlutterHotRestart<cr>
 nnoremap <leader>fD :FlutterVisualDebug<cr>
+let dart_format_on_save = 1
+
+let g:lsc_server_commands = {'dart': '~/dev/dart-sdk/bin/dart ~/dev/dart-sdk/bin/snapshots/analysis_server.dart.snapshot --lsp'}
+let g:lsc_auto_map = v:true " Use defaults
 
 " NERDTree map {
 " aut start nerdtree
@@ -142,3 +139,8 @@ set foldmethod=manual
 " abbr
 abbr lenght length
 abbr lenhtg length
+
+:map <space>+ :res +5<CR>
+:map <space>- :res -5<CR>
+
+

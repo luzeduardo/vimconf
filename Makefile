@@ -10,15 +10,10 @@ fullinstall: clean bootstrap-vim
 	cp local.vimrc ~/.vimrc.local
 	cp local.vimrc.bundles ~/.vimrc.local.bundles
 	
-install:
+install: clean
 	cp $(VIMRC) ~/.vimrc
 	cp local.vimrc ~/.vimrc.local
 	cp local.vimrc.bundles ~/.vimrc.local.bundles
-
-localinstall: clean
-	cp $(VIMRC) ~/.vimrc
-	cp local.vimrc ~/.vimrc.local
-	cp local.vimrc.bundles ~/.vimrc.local.bundles	
 
 vimrc:
 	cp $(VIMRC) ~/.vimrc
