@@ -7,9 +7,20 @@ set nrformats+=alpha
 set autoindent
 set mouse=a
 
-" Codi
-let g:codi#width = 50.0
-let g:codi#rightalign = 0
+
+Plug 'thosakwe/vim-flutter'
+call plug#end()
+
+" Enable Flutter menu
+call FlutterMenu()
+
+" Some of these key choices were arbitrary;
+" it's just an example.
+nnoremap <leader>fa :FlutterRun<cr>
+nnoremap <leader>fq :FlutterQuit<cr>
+nnoremap <leader>fr :FlutterHotReload<cr>
+nnoremap <leader>fR :FlutterHotRestart<cr>
+nnoremap <leader>fD :FlutterVisualDebug<cr>
 
 " NERDTree map {
 " aut start nerdtree
