@@ -14,3 +14,5 @@ Plug 'VincentCordobes/vim-translate'
 Plug 'natebosch/vim-lsc'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+silent exec "!git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim"
+

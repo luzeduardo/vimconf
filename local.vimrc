@@ -79,6 +79,8 @@ map <leader>opfb :CtrlPChange<cr>
 
 " Ag Search with leader f map instead of grep.vim {
   map <leader>f :Ag<cr>
+  let g:ag_working_path_mode="r"
+  let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
 " } }
 
 " CSS Autocomplete
