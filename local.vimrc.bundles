@@ -13,6 +13,3 @@ Plug 'VincentCordobes/vim-translate'
 Plug 'natebosch/vim-lsc'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim'
-
-#silent exec "!rm ~/.vim/bundle/ack.vim && git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim"
-
