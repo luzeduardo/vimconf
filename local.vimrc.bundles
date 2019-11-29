@@ -4,7 +4,7 @@ Plug 'junegunn/fzf', { }
 Plug 'junegunn/fzf.vim'
 Plug 'pbogut/fzf-mru.vim'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'maralla/completor.vim'
+" Plug 'maralla/completor.vim'
 Plug 'metakirby5/codi.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'whiteinge/diffconflicts'
