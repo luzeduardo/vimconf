@@ -127,6 +127,8 @@ vmap <S-f> :%!python -m json.tool <CR>
 
 " comment line
 :map <leader>lk <Esc>0i/*<Esc><S-$><S-a>*/<Esc>:w<CR> 
+" uncomment line
+:map <leader>lku <Esc>0t*<Esc>xx<Esc><S-$>xx<Esc>==_:w<CR>
 
 
 " translation
