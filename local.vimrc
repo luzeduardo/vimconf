@@ -121,7 +121,7 @@ vmap <S-f> :%!python -m json.tool <CR>
 
 " mapping for lazy things
 " console.log
-:map <leader>ll yiwo<Esc>iconsole.log('<Esc>p<Esc>a====> <Esc>f)i, <Esc>p<Esc>==:w<CR>
+:map <leader>ll yiwo<Esc>iconsole.log('<Esc>p<Esc>a====> <Esc>f)i, <Esc>p<Esc>i<Esc>==:w<Esc>o<Esc><CR>
 " debugger
 :map <leader>lp o<Esc>idebugger<Esc>==:w<CR>
 
@@ -147,4 +147,5 @@ abbr lenhtg length
 :map <space>+ :res +5<CR>
 :map <space>- :res -5<CR>
 
+:imap ii <Esc>
 
