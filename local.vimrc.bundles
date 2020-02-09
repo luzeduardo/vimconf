@@ -13,3 +13,4 @@ Plug 'VincentCordobes/vim-translate'
 Plug 'natebosch/vim-lsc'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim'
+Plug 'ryanoasis/vim-devicons'
