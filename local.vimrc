@@ -179,3 +179,26 @@ function! s:show_documentation()
   endif
 endfunction
 
+set hidden
+
+let uname = substitute(system('uname'), '\n', '', '')
+" Example values: Linux, Darwin, MINGW64_NT-10.0, MINGW32_NT-6.1
+if uname == 'Darwin'
+    " do linux/mac command
+    let g:LanguageClient_serverCommands = {
+                \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+                \ 'javascript': ['/Users/eduardo/.nvm/versions/node/v10.18.1/bin/javascript-typescript-langserver'],
+                \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+                \ }
+else " windows
+    let g:LanguageClient_serverCommands = {
+                \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+                \ 'javascript': ['/usr/bin/javascript-typescript-stdio'],
+                \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+                \ }
+endif
+
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
