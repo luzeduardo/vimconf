@@ -29,7 +29,7 @@ let g:NERDTreeMouseMode=3
 
 " toggle nerd tree
 nmap <leader>m :NERDTreeRefreshRoot %<CR>
-
+nmap <C-b> :NERDTreeToggle<CR>
 
 " }
 
