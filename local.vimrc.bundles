@@ -12,6 +12,8 @@ Plug 'thosakwe/vim-flutter'
 Plug 'VincentCordobes/vim-translate'
 Plug 'natebosch/vim-lsc'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-css'
+Plug 'pangloss/vim-javascript'
 Plug 'rust-lang/rust.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'autozimu/LanguageClient-neovim', {
