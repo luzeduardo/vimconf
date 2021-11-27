@@ -18,8 +18,3 @@ Plug 'pangloss/vim-javascript'
 Plug 'docunext/closetag.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-

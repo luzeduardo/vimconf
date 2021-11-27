@@ -220,7 +220,7 @@ set gfn=Monospace\ 10
 
 if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
-    set guifont=Menlo:h12
+    set guifont=JetBrains\ Mono\ Regular:h16
     set transparency=7
   endif
 else
