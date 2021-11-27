@@ -7,28 +7,12 @@ set nrformats+=alpha
 set autoindent
 set mouse=a
 
-if has("gui_running")
-  if has("gui_mac") || has("gui_macvim")
-    set guifont=JetBrains\ Mono\ Regular:h16
-    set transparency=7
-  endif
-else
-  let g:CSApprox_loaded = 1
-
-  " IndentLine
-  let g:indentLine_enabled = 1
-  let g:indentLine_concealcursor = 0
-  let g:indentLine_char = '┆'
-  let g:indentLine_faster = 1
-
-  if $COLORTERM == 'gnome-terminal'
-    set term=gnome-256color
-  else
-    if $TERM == 'xterm'
-      set term=xterm-256color
-    endif
-  endif
+" This check avoids loading plugin when Vim is running on terminal
+if has('gui_running')
+  silent! call simple_guifont#Set(
+    \['JetBrains Mono', 'Hack'], 'Consolas', 16)
 endif
+
 
 " Some of these key choices were arbitrary;
 " it's just an example.
