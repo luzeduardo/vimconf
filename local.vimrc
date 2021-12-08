@@ -213,3 +213,9 @@ nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 
+" Creating a mapping to turn it on and off:
+map <leader>l :RainbowLevelsToggle<cr>
+
+" Or automatically turning it on for certain file types:
+autocmd Filetype * if index(['javascript', 'python', 'php', 'xml', 'yaml'], &ft) | call rainbow_levels#on() | else | call rainbow_levels#off() | endif
+
