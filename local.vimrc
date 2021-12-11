@@ -137,6 +137,9 @@ vmap <S-f> :%!python -m json.tool <CR>
 " uncomment line
 :map <leader>lku <Esc>0t*<Esc>xx<Esc><S-$>xx<Esc>==_:w<CR>
 
+" ident all the file
+:map <leader>i <Esc>ggv<S-g>==<Esc>
+
 " translation
 " to english
 vnoremap <silent><leader>lte :'<,'>TranslateVisual -show-original-phonetics -show-alternatives -show-translation-phonetics -verbose pt:en<CR>
