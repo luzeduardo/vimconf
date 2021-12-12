@@ -140,6 +140,9 @@ vmap <S-f> :%!python -m json.tool <CR>
 " ident all the file
 :map <leader>i <Esc>ggv<S-g>==<Esc>
 
+" save as root when not root
+:map <leader>rr <Esc>:w !sudo tee "%"<CR>
+
 " translation
 " to english
 vnoremap <silent><leader>lte :'<,'>TranslateVisual -show-original-phonetics -show-alternatives -show-translation-phonetics -verbose pt:en<CR>
